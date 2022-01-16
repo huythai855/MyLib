@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag_Borrow">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnSearchBorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBorrow"
+            android:layout_marginEnd="20dp"
+            android:text="Tìm kiếm"
+            android:textColor="@color/trang"
+            app:layout_constraintBottom_toBottomOf="@+id/edtBorrowFind"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edtBorrowFind" />
+
+        <TextView
+            android:id="@+id/txtBorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Danh sách mượn"
+            android:textColor="@color/xanh_lam_dam"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtBorrowFind"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBorrow"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+
+            android:hint="Nhập thông tin tìm kiếm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBorrow" />
+
+        <Button
+            android:id="@+id/btnAddBorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBorrow"
+
+            android:text="Thêm lượt mượn"
+            android:textColor="@color/trang"
+            app:layout_constraintEnd_toEndOf="@+id/btnSearchBorrow"
+            app:layout_constraintTop_toBottomOf="@+id/btnSearchBorrow" />
+
+        <Spinner
+            android:id="@+id/searchlist1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/btnAddBorrow"
+            app:layout_constraintStart_toStartOf="@+id/edtBorrowFind"
+            app:layout_constraintTop_toTopOf="@+id/btnAddBorrow" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAddBorrow">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag_Bookshielf">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBookshielf"
+            android:layout_marginEnd="20dp"
+            android:text="Tìm kiếm"
+            android:textColor="@color/trang"
+            app:layout_constraintBottom_toBottomOf="@+id/edtBookFind"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/edtBookFind" />
+
+        <TextView
+            android:id="@+id/txtBookshielf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Kệ sách"
+            android:textColor="@color/xanh_lam_dam"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtBookFind"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBookshielf"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+
+            android:hint="Nhập thông tin tìm kiếm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBookshielf" />
+
+        <Button
+            android:id="@+id/btnAddBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBookshielf"
+
+            android:text="Thêm sách"
+            android:textColor="@color/trang"
+            app:layout_constraintEnd_toEndOf="@+id/btnSearch"
+            app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
+
+        <Spinner
+            android:id="@+id/searchlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/btnAddBook"
+            app:layout_constraintStart_toStartOf="@+id/edtBookFind"
+            app:layout_constraintTop_toTopOf="@+id/btnAddBook" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAddBook">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

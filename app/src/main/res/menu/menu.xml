@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tranfer"
+        android:title="Danh sách mượn"
+        android:icon="@drawable/tranfer"/>
+
+    <item
+        android:id="@+id/bookshielf"
+        android:title="Kệ sách"
+        android:icon="@drawable/bookshelf"/>
+
+    <item
+        android:id="@+id/security"
+        android:title="Bảo mật"
+        android:icon="@drawable/sercurity"/>
+
+
+</menu>

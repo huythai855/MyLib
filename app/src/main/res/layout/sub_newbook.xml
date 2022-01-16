@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sub_NewBook">
+
+
+    <ImageView
+        android:id="@+id/imgBook"
+        android:layout_width="100dp"
+        android:layout_height="175dp"
+        android:src="@drawable/book"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        app:layout_goneMarginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Tên sách"
+        android:textSize="25sp"
+        android:textColor="@color/tim_dam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgBook"
+        app:layout_constraintTop_toTopOf="@+id/imgBook" />
+
+    <EditText
+        android:id="@+id/edtAuthor"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Tác giả"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtTitle"
+        app:layout_constraintStart_toStartOf="@+id/edtTitle"
+        app:layout_constraintTop_toBottomOf="@+id/edtTitle" />
+
+    <EditText
+        android:id="@+id/edtCode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Mã sách"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edtAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/edtAuthor" />
+
+    <EditText
+        android:id="@+id/edtDescription"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Lời tựa"
+        android:textSize="20sp"
+        android:lines="4"
+        app:layout_constraintStart_toStartOf="@+id/edtCode"
+        app:layout_constraintTop_toBottomOf="@+id/edtCode" />
+
+    <ImageView
+        android:id="@+id/btnUpload"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBook"
+        app:srcCompat="@drawable/upload" />
+
+    <ImageView
+        android:id="@+id/btnReload"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnUpload"
+        app:layout_constraintStart_toEndOf="@+id/btnUpload"
+        app:layout_constraintTop_toTopOf="@+id/btnUpload"
+        app:srcCompat="@drawable/reload" />
+
+    <TextView
+        android:id="@+id/txtGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Thể loại:"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpload" />
+
+    <Spinner
+        android:id="@+id/spGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtGenre"
+        app:layout_constraintStart_toStartOf="@+id/edtDescription"
+        app:layout_constraintTop_toTopOf="@+id/txtGenre" />
+
+    <TextView
+        android:id="@+id/txtNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng:"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtGenre"
+        app:layout_constraintTop_toBottomOf="@+id/txtGenre" />
+
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=" "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNumber"
+        app:layout_constraintStart_toStartOf="@+id/spGenre"
+        app:layout_constraintTop_toTopOf="@+id/txtNumber" />
+
+    <TextView
+        android:id="@+id/txtLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Ngôn ngữ:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtNumber"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
+
+    <Spinner
+        android:id="@+id/spLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtLanguage"
+        app:layout_constraintStart_toStartOf="@+id/edtNumber"
+        app:layout_constraintTop_toTopOf="@+id/txtLanguage" />
+
+    <TextView
+        android:id="@+id/txtBorrowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Vị trí:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/txtLanguage" />
+
+    <EditText
+        android:id="@+id/edtLocation"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="               "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBorrowing"
+        app:layout_constraintStart_toStartOf="@+id/spLanguage"
+        app:layout_constraintTop_toTopOf="@+id/txtBorrowing" />
+
+    <ImageView
+        android:id="@+id/btnSave"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtLocation"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/savebutton" />
+
+    <TextView
+        android:id="@+id/txtWarningAddBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vui lòng điền đầy đủ các thông tin"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        android:textColor="@color/do_dam"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtLocation"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

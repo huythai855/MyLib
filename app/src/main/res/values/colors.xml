@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vang">#fce803</color>
+    <color name="xanh_lam_dam">#0088cc</color>
+    <color name="xanh_lam_nhat">#00ccfa</color>
+    <color name="xanh_navy">#94f1ff</color>
+    <color name="xanh_luc_nhat">#4ffa00</color>
+    <color name="xanh_luc_dam">#48d904</color>
+    <color name="do_dam">#ff0000</color>
+    <color name="do_do">#b80251</color>
+    <color name="den">#000000</color>
+    <color name="trang">#ffffff</color>
+    <color name="tim_nhat">#fc03f8</color>
+    <color name="tim_dam">#6602b8</color>
+
+    <color name="colorPrimary">#7b4bff</color>
+    <color name="colorPrimaryDark">#6539ba</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bgBottomNavigation">#fe485a</color>
+
+</resources>

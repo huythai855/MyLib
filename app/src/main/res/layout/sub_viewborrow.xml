@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sub_NewBorrow">
+
+
+    <TextView
+        android:id="@+id/txtBorrowDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Ngày trả:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txtBorrowAddress"
+        app:layout_constraintTop_toBottomOf="@+id/txtBorrowDate" />
+
+    <TextView
+        android:id="@+id/ansBorrowCode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Còn lại trong kho"
+        android:textColor="@color/xanh_lam_dam"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/txtCode"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
+
+    <TextView
+        android:id="@+id/ansLibrarian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên thủ thư"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtLibrarian"
+        app:layout_constraintStart_toStartOf="@+id/ansBorrowDate"
+        app:layout_constraintTop_toTopOf="@+id/txtLibrarian"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtLibrarian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Thủ thư:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txtBorrowDate2"
+        app:layout_constraintTop_toBottomOf="@+id/txtBorrowDate2" />
+
+    <TextView
+        android:id="@+id/ansBorrowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBorrowDate"
+        app:layout_constraintStart_toStartOf="@+id/ansBorrowTel"
+        app:layout_constraintTop_toTopOf="@+id/txtBorrowDate"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/ansBorrowDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBorrowDate2"
+        app:layout_constraintStart_toStartOf="@+id/ansBorrowDate"
+        app:layout_constraintTop_toTopOf="@+id/txtBorrowDate2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtBorrowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Ngày mượn:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txtBorrowAddress"
+        app:layout_constraintTop_toBottomOf="@+id/txtBorrowTel" />
+
+    <TextView
+        android:id="@+id/txtBorrowTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Số điện thoại:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txtBorrowAddress"
+        app:layout_constraintTop_toBottomOf="@+id/txtBorrowAddress" />
+
+    <TextView
+        android:id="@+id/txtBorrowAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Địa chỉ / lớp:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txtBorrowName"
+        app:layout_constraintTop_toBottomOf="@+id/txtBorrowName" />
+
+    <TextView
+        android:id="@+id/txtBorrowInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông tin người mượn"
+        android:textColor="@color/xanh_luc_dam"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/txtBookInfo"
+        app:layout_constraintTop_toBottomOf="@+id/btnChooseBook" />
+
+    <ImageView
+        android:id="@+id/imgBook"
+        android:layout_width="100dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="10dp" />
+
+    <TextView
+        android:id="@+id/txtAuthor"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Tác giả"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtCode"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Mã sách"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txtAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/txtAuthor" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Tên sách"
+        android:textSize="25sp"
+        android:textColor="@color/tim_dam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toEndOf="@+id/imgBook"
+        app:layout_constraintTop_toTopOf="@+id/imgBook" />
+
+    <TextView
+        android:id="@+id/txtNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Số lượng mượn:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/ansBorrowCode"
+        app:layout_constraintTop_toBottomOf="@+id/txtCode" />
+
+    <ImageView
+        android:id="@+id/btnReturn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansLibrarian"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/returned" />
+
+    <TextView
+        android:id="@+id/txtBookInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông tin sách"
+        android:textColor="@color/xanh_luc_dam"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imgBook"
+        app:layout_constraintStart_toStartOf="@+id/imgBook"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnChooseBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+
+        android:text="Chọn sách"
+        android:textColor="@color/trang"
+        app:layout_constraintStart_toStartOf="@+id/imgBook"
+        app:layout_constraintTop_toBottomOf="@+id/imgBook" />
+
+    <TextView
+        android:id="@+id/txtBorrowName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Họ và tên:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txtBorrowInfo"
+        app:layout_constraintTop_toBottomOf="@+id/txtBorrowInfo" />
+
+    <TextView
+        android:id="@+id/ansBorrowName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:textSize="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBorrowName"
+        app:layout_constraintStart_toEndOf="@+id/txtBorrowName"
+        app:layout_constraintTop_toTopOf="@+id/txtBorrowName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/ansBorrowAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBorrowAddress"
+        app:layout_constraintStart_toStartOf="@+id/ansBorrowName"
+        app:layout_constraintTop_toTopOf="@+id/txtBorrowAddress" />
+
+    <TextView
+        android:id="@+id/ansBorrowTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBorrowTel"
+        app:layout_constraintStart_toStartOf="@+id/ansBorrowAddress"
+        app:layout_constraintTop_toTopOf="@+id/txtBorrowTel"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
